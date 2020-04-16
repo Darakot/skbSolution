@@ -1,4 +1,5 @@
 import sql.query.SqlQuery;
+import util.PropertiesDB;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,5 +12,6 @@ public class Main {
         sqlQuery.DupValues();
         System.out.println("");
         sqlQuery.DupValuesMinMaxAver();
+
     }
 }

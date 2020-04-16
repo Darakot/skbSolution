@@ -1,6 +1,7 @@
 package sql;
 
 import lombok.NoArgsConstructor;
+import util.PropertiesDB;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -12,22 +13,19 @@ import java.sql.SQLException;
  */
 @NoArgsConstructor
 public class SqlConnected {
-    static final String DB_URL = "jdbc:postgresql://127.0.0.1:5432/skb";
-    static final String USER = "postgres";
-    static final String PASS = "0101gznm";
 
     public Connection getConnectionToDb() {
 
         Connection connection = null;
         try {
-            Class.forName("org.postgresql.Driver");
+            Class.forName(PropertiesDB.getDriver());
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
 
         try {
             connection = DriverManager
-                    .getConnection(DB_URL, USER, PASS);
+                    .getConnection(PropertiesDB.getHost(), PropertiesDB.getLogin(), PropertiesDB.getPassword());
             return connection;
 
         } catch (SQLException e) {
