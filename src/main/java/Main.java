@@ -1,9 +1,8 @@
-import sql.query.SqlQuery;
-import util.PropertiesDB;
+import sql.query.SqlQueryImpl;
 
 public class Main {
     public static void main(String[] args) {
-        SqlQuery sqlQuery = new SqlQuery();
+        SqlQueryImpl sqlQuery = new SqlQueryImpl();
 
         sqlQuery.noDupValues();
         System.out.println("");

@@ -1,6 +1,6 @@
 package util;
 
-import lombok.NoArgsConstructor;
+import lombok.extern.log4j.Log4j;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -11,21 +11,19 @@ import java.util.Properties;
  * Класс для загрузки пропертей из файла с конфигурацией
  */
 
-@NoArgsConstructor
+@Log4j
 public class PropertiesDB {
     private static Properties properties;
 
     static {
         ClassLoader classLoader = PropertiesDB.class.getClassLoader();
         File file = new File(classLoader.getResource("configDB.properties").getFile());
-        System.out.println(file.getPath());
         properties = new Properties();
 
-        try {
-            FileInputStream fileProperties = new FileInputStream(file);
+        try(FileInputStream fileProperties = new FileInputStream(file)) {
             properties.load(fileProperties);
         } catch (IOException e) {
-            e.printStackTrace();
+            log.error(e.getMessage());
         }
     }
 

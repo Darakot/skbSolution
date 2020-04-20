@@ -1,0 +1,14 @@
+2020-04-20 04:45:40 INFO  SqlConnect.getConnectionToDb:27 - org.postgresql.Driver1
+2020-04-20 04:46:46 ERROR SqlConnect.getConnectionToDb:27 - org.postgresql.Driver1
+2020-04-20 04:46:59 INFO  SqlConnect.getConnectionToDb:27 - org.postgresql.Driver1
+2020-04-20 04:48:05 ERROR SqlConnect.getConnectionToDb:27 - org.postgresql.Driver1
+2020-04-20 04:48:35 ERROR SqlConnect.getConnectionToDb:27 - РЎС‚СЂРѕРєР° РїРѕРґРєР»СЋС‡РµРЅРёСЏ Рє Р‘Р” РЅРµРєРѕСЂСЂРµРєС‚РЅР° org.postgresql.Driver1
+2020-04-20 04:49:15 ERROR SqlQueryImpl.query:73 - ОШИБКА: ошибка синтаксиса (примерное положение: "1")
+  Позиция: 1
+2020-04-20 04:50:15 ERROR SqlQueryImpl.query:73 - РЅРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ Р·Р°РїСЂРѕСЃ Рє Р‘Р” ОШИБКА: ошибка синтаксиса (примерное положение: "1")
+  Позиция: 1
+2020-04-20 04:50:51 ERROR SqlQueryImpl.query:73 - РЅРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ Р·Р°РїСЂРѕСЃ Рє Р‘Р” 42601
+2020-04-20 04:51:11 ERROR SqlQueryImpl.query:73 - РЅРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ Р·Р°РїСЂРѕСЃ Рє Р‘Р” ОШИБКА: ошибка синтаксиса (примерное положение: "1")
+  Позиция: 1
+2020-04-20 04:52:00 ERROR SqlQueryImpl.query:73 - РЅРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ Р·Р°РїСЂРѕСЃ Рє Р‘Р” null
+2020-04-20 04:52:14 ERROR SqlQueryImpl.query:73 - РЅРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ Р·Р°РїСЂРѕСЃ Рє Р‘Р” 1
